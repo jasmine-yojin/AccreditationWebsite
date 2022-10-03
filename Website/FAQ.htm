@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!--Link to CSS Sytle Sheet------->
+  <link rel="stylesheet" href="styles.css">
+  <!---Responsive to phone, tablet, computer...-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions</title>
+  <style>
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        transition: 0.4s;
+      }
+
+      .active, .accordion:hover {
+      background-color: #ccc; 
+      }
+
+      .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      }
+
+      .accordion:after {
+      content: '\02795'; /* Unicode character for "plus" sign (+) */
+      font-size: 13px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+      }
+
+      .active:after {
+      content: "\2796"; /* Unicode character for "minus" sign (-) */
+      }
+  </style>
+</head>
+<body>
+     <!---------------- Header/Welcome Message --------------> 
+     <div class="header">
+      <h1 style="text-align:center">Frequently Asked Questions</h1>
+      <p style="text-align:center">More Information</p>
+    </div>
+
+    <div class="topnav"> 
+        <a href ="index.htm">Home</a>
+        <a href ="contact.htm">About US</a>
+        <a href="https://cuny907-my.sharepoint.com/:x:/g/personal/jasmine_kim61_login_cuny_edu/EYdpbikc2s9LqQ7BBCm-oMwBstAsLONsqJTCT0KTX5w5uw?e=5pLqfs" >Accreditation List</a>
+        <a href ="nys.htm">NYS High Schools</a>
+        <a href ="out-of-state.htm">Out-of-State High Schools</a>
+        <a href ="Home School.htm">Homeschool</a>
+        <a href ="virtual.htm">Virtual Schools</a>
+        <a href ="High School Equivalency.htm">High School Equivalency</a>
+        <a href ="FAQ.htm" class="active">FAQ</a>
+      </div>
+
+<h2>Frequently Asked Questions</h2>
+
+  <button class="accordion">This online high school is accredited. How come we don't accept?</button>
+  <div class="panel">
+    <p>Did you know that Penn Foster is accredited by Middle States Association? A private online school is not acceptable to CUNY even if it is accredited.</p>
+  </div>
+  
+  <button class="accordion">Why doesn't CUNY accept online schools?</button>
+  <div class="panel">
+    <p>NYS does not recognize on-line or correspondence study as the equivalent to a high school diploma for New York State residents. Please refer to this <a href="Email Interviews/Leslie Templeman Virtual & Distance Education Diploma.pdf">email</a> for more information. </p>
+  </div>
+
+  <button class="accordion">The student only submitted the GED scores. Do we need the diploma also?</button>
+  <div class="panel">
+    <p>Both the diploma and the scores are necessary for our senior colleges. For community colleges, HSE diploma is sufficient to complete the application.</p>
+  </div>
+
+  <button class="accordion">Former Home School Applicants Graduating from NYC High School</button>
+  <div class="panel">
+    <p>Awarding credit for coursework completed via home instruction is locally
+      determined <a href="www.nysed.gov/curriculum-instruction/transfer-student-questionand-
+      answer">(NYSED, "Transfer Student Question Answer")</a>.</p>
+  </div>
+
+  <button class="accordion">Who evaluates and grants transfer credit for students previously receiving
+    home instruction, now enrolled in a New York State school?</button>
+  <div class="panel">
+    <p>The principal, in consultation with relevant faculty, evaluates the
+      Individualized Home Instruction Plan (IHIP) and other records and awards
+      the appropriate units of transfer credit. Transfer credit may be awarded if
+      the home instruction included work consistent with the New York State
+      commencement level learning standards and of comparable scope and quality
+      to that which would have been done in the school awarding credit  <a href="www.nysed.gov/curriculum-instruction/transfer-student-questionand-
+      answer">(NYSED, "Transfer Student Question Answer")</a>.</p>
+  </div>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+   <!---------------- Footer/Info about UAPC --------------> 
+   <div class = "footer">
+    <img src="ANIUAPC.GIF" alt="UAPC logo" class="center" width="75" height="75"> 
+    <pre style="font-size:80%; text-align:center">University Application Processing Center<br>2001 Oriental Blvd, Brooklyn, NY 11235<br>(212) 997-2869<br>
+    </pre>
+  </div>  
+
+</body>
+</html>

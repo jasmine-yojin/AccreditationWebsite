@@ -1,0 +1,2 @@
+Gold:#ffb81c
+Paler blue: #0033a1 
